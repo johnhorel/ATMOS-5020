@@ -192,17 +192,13 @@ Constants                                    | ALLCAPS    | ALLCAPS    | ALLCAPS
 
 ## Power of 10
 
-Laid out by JPL lead scientist Gerard J. Holzmann, these strict coding rules focus on security.
+Laid out by JPL lead scientist Gerard J. Holzmann, here's a quick overview of some guidelines he presents as they apply to this class.
 
-NASA's 10 rules for writing mission-critical code in a simplified form:
-
-1. Restrict all code to very simple control flow constructs – do not use `goto` statements, `setjmp` or `longjmp` constructs, and direct or indirect recursion.
+1. Restrict all code to very simple control flow constructs – Avoid using complex or nested logic and direct or indirect recursion.
 
   - _Ideally you want all your code to be easily maintainable and verifiable. By reducing complex loops, removal of all `goto` style statements and implementing as much ternary logic as possible your source code becomes far easier to maintain and diagnosable when problems do arise._
 
   - _As for the recursion topic, this is a hotly debated issue. In short most languages support recursion, but due to the way the stack is handled and the possibility of the "endless rabbit hole", it is best to steer clear of using recursion._
-
-  - _This is a pretty important rule to follow when writing code that will be moved into a production environment, as it is standard now to use a [Continuous Integration](https://en.wikipedia.org/wiki/Continuous_integration) engine or [Linter](<https://en.wikipedia.org/wiki/Lint>_(software)) at every stage of the software build process._
 
 2. All loops must have a fixed upper-bound. It must be trivially possible for a checking tool to prove statically that a preset upper-bound on the number of iterations of a loop cannot be exceeded. If the loop-bound cannot be proven statically, the rule is considered violated.
 
@@ -210,15 +206,13 @@ NASA's 10 rules for writing mission-critical code in a simplified form:
 
   - > "By having upper limit bound, the function can recover from an error state and return then program to operational state."
 
-3. Do not use dynamic memory allocation after initialization.
-
-  - > This rule is common for safety critical software and appears in most coding guidelines. The reason is simple: memory allocators, such as malloc, and garbage collectors often have unpredictable behavior that can significantly impact performance. A notable class of coding errors also stems from mishandling of memory allocation and free routines: forgetting to free memory or continuing to use memory after it was freed, attempting to allocate more memory than physically available, overstepping boundaries on allocated memory, etc. Forcing all applications to live within a fixed, pre-allocated, area of memory can eliminate many of these problems and make it easier to verify memory use. Note that the only way to dynamically claim memory in the absence of memory allocation from the heap is to use stack memory. In the absence of recursion (Rule 1), an upper-bound on the use of stack memory can derived statically, thus making it possible to prove that an application will always live within its pre-allocated memory means.
+3. Avoid using dynamic memory.
 
   - _In short, be diligent when managing your variables. While most of the interpretive languages do most of this work for you via garbage collectors, you should always be proactive in managing memory. **It has been noted in the current ASTG standards that the recommended practice for declaring variables is near the location in which they will be used**._
 
   - _It is also important to not recast variable types once initialized. This is easily doable in interpretive languages but is not recommended, because of how the memory is allocated for different types of variables._
 
-4. No function should be longer than what can be printed on a single sheet of paper in a standard reference format with one line per statement and one line per declaration. Typically, this means no more than about 60 lines of code per function.
+4. Keep functions (and key segments of code) to about 60 lines or one page of printed text.
 
   - > Each function should be a logical unit in the code that is understandable and verifiable as a unit. It is much harder to understand a logical unit that spans multiple screens on a computer display or multiple pages when printed. Excessively long functions are often a sign of poorly structured code.
 
@@ -226,7 +220,7 @@ NASA's 10 rules for writing mission-critical code in a simplified form:
 
   - _I would also add that most code styles have a line length standard to. For example Python's PEP8 standard requires a 79 character line limit. Most other guides have either a 80 (classic) or 100 character per line limit. This provides easy readability on most computer screens._
 
-5. The assertion density of the code should average to a minimum of two assertions per function.
+5. Write unit/regression tests.
 
   - > Statistics for industrial coding efforts indicate that unit tests often find at least one defect per 10 to 100 lines of code written. The odds of intercepting defects increase with assertion density.
 
@@ -244,21 +238,7 @@ NASA's 10 rules for writing mission-critical code in a simplified form:
 
   - **In my experiences this is one of the simplest rules to follow, and has saved me hundreds of hours of debugging and expedited every code review I've been a part of.**
 
-8. The use of the preprocessor must be limited to the inclusion of header files and simple macro definitions. Token pasting (**code pasting**), variable argument lists (ellipses), and recursive macro calls are not allowed. All macros must expand into complete syntactic units. The use of conditional compilation directives is often also dubious, but cannot always be avoided. This means that there should rarely be justification for more than one or two conditional compilation directives even in large software development efforts, beyond the standard boilerplate that avoids multiple inclusion of the same header file. Each such use should be flagged by a tool-based checker and justified in the code.
-
-  - _While preprocessors are often used (and valuable) in the build process for many languages and they can easily obfuscate code and "destroy code clarity and befuddle many text based checkers"._
-
-9. The use of pointers should be restricted. Specifically, no more than one level of dereferencing is allowed. Function pointers are not permitted.
-
-  - _Pointer are powerful and yet can cause all sort of problems if not used correctly. In this context they are referring to C/C++ and Fortran, but it is important to note that Java, Python, IDL and even JavaScript use pointers behind the scenes. In many interpretive languages when you copy a object in effort to save memory and improve performance the compiler creates a pointer to the original object._
-
-10. All code must be compiled, from the first day of development, with all compiler warnings enabled at the compiler's most pedantic setting. All code must compile with these setting without any warnings.
-
-  - _When writing software, don't hide warnings, delay fixes etc. Always resolve runtime errors, exceptions and any other issue as you write the code_
-
-Some parting words from NASA:
-
->> The rules act like the seat-belt in your car: initially they are perhaps a little uncomfortable, but after a while their use becomes second-nature and not using them becomes unimaginable.
+>> The rules act like the seat-belt in your car: initially they are perhaps a little uncomfortable, but after a while their use becomes second-nature and not using them becomes unimaginable. -- Holzmann
 
 ## Version control
 

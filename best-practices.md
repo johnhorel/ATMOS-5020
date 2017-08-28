@@ -279,7 +279,7 @@ One of the most powerful tools in git is the ability to use branches, create log
 
 [Pseudocode](https://en.wikipedia.org/wiki/Pseudocode) is the process of putting your ideas about your program on paper (or screen). This can be done in several ways, some of these include flow charts, [Warnier diagrams](https://en.wikipedia.org/wiki/Warnier/Orr_diagram), [UML](https://en.wikipedia.org/wiki/Unified_Modeling_Language) or just plain english statements that say what you are going to do.
 
-![code1](img/code1.png) _From "Logic and Structured Design for Computer Programming", 3rd Ed., Harold J. Rood_
+![code1](supplementary/code1.png) _From "Logic and Structured Design for Computer Programming", 3rd Ed., Harold J. Rood_
 
 In my experiences the most common formats are flowcharts and descriptive paragraphs that explain the problem and a few basic steps to solve them. It is also pretty common to just write out a few comments in your code to start the overall process. Personally I use a notebook and sketch a flow chart then transfer those notes to comments in the code. I expand the comments to paragraphs of text that explain what the code should be doing.
 
@@ -299,7 +299,7 @@ Flowcharts are probably the most common tool for diagraming and sharing the diag
 
 For the most part these symbols are intuitive but long time ago, [IBM made an effort to standardize](http://www.eah-jena.de/~kleine/history/software/IBM-FlowchartingTechniques-GC20-8152-1.pdf) them
 
-![IBM flowchart symbols](img/ibm_flow_symbols.png)
+![IBM flowchart symbols](supplementary/ibm_flow_symbols.png)
 
 <!--
 _Class problem_

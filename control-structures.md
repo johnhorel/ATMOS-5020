@@ -84,9 +84,7 @@ while (i < 10):
 
 ## Designing/planning out a program
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">There are two hard things in computer science: cache invalidation, naming things, and off-by-one errors.</p>&mdash; Jeff Atwood (@codinghorror) <a href="https://twitter.com/codinghorror/status/506010907021828096">August 31, 2014</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-
+> There are two hard things in computer science: cache invalidation, naming things, and off-by-one errors.</p>&mdash; [Jeff Atwood (@codinghorror)](https://twitter.com/codinghorror/status/506010907021828096)
 
 In my experience, programming is simple, solving the problem is the hard part.  Meaning that once you learn the basic mechanics of programming, applying that to a language is fairly straight forward.  The real challenge of programming is:
 

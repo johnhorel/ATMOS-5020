@@ -190,7 +190,8 @@ Namespaces, Classes, Interfaces & Exceptions | PascalCase | PascalCase | PascalC
 Methods, Functions & Subroutines             | snake_case | camelCase  | snake_case or camelCase | camelCase
 Constants                                    | ALLCAPS    | ALLCAPS    | ALLCAPS                 | ALLCAPS
 
-## Power of 10
+
+## A few simple guidelines for better code
 
 Laid out by JPL lead scientist Gerard J. Holzmann, here's a quick overview of some guidelines he presents as they apply to this class.
 

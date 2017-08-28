@@ -58,6 +58,14 @@ else:
     b = 1
 ```
 
+#### `switch` statement
+
+Derived from the `IF/ELSE IF/ELSE` construct.  Varies in application per language, but evalutes the same value against several statements and 'stops' on the first match.
+
+```python
+
+```
+
 ### Repetition
 
 Repetition controls are used to repeat a portion of the code until an instruction to stop is passed.  Commonly seen methods of this are:
@@ -92,7 +100,7 @@ In my experience, programming is simple, solving the problem is the hard part.  
 - breaking the problem down to small parts
   - breaking those small parts into smaller parts
     - breaking those smaller parts into even smaller parts
-      - avoiding recursion
+      - avoiding [recursion][recursion]
 - writing code that not only you can understand but so can the next person
 
 At the onset of any program it's pretty important to have a clearly defined set of goals.  It is far too easy to start working on a project and before you know it, the code you're working on is doing something completely different than what you expected.  Remember it's better to write smaller simpler programs than larger complex ones.
@@ -135,4 +143,5 @@ It's better to take a few extra minutes when starting out to solve the logic puz
 [if-then-1]: supplementary/if-then-1.png
 [if-then-2]: supplementary/if-then-2.png
 [loops]: supplementary/loops.png
-[whiteboard-example]: supplementary/whiteboard-example.jpg
+[whiteboard-example]: supplementary/whiteboard-example.png
+[recursion]: https://en.wikipedia.org/wiki/Recursion_(computer_science)

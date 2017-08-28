@@ -17,7 +17,7 @@ Every webpage on the internet starts with the following code...
   </head>
   <body>
     <h1>What is the meaning of life?</h1>
-    <p>The answer is simply, <b>42</b>
+    <p>The answer is simply, <b>42</b></p>
   </body>
 </html>
 ```

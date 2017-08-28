@@ -50,7 +50,7 @@ int foo() {
 }
 ```
 
-Please read _ASTG Coding Standard_ chapter 7 for more information on NASA's preferred method of documenting code. This standard has been adopted widely in the computer industry with only a small change of often dropping the `@brief` tag as most document generators accept the first line of text as the object brief. The Python documentation standard is similar in concept just a slightly different method of documentation. Please read the [PEP8 standards](https://www.python.org/dev/peps/pep-0008/).
+Please read [_ASTG Coding Standard](https://modelingguru.nasa.gov/servlet/JiveServlet/previewBody/1439-102-9-6255/ASTG_Coding_Standards_v1.7.pdf)_ chapter 7 for more information on NASA's preferred method of documenting code. This standard has been adopted widely in the computer industry with only a small change of often dropping the `@brief` tag as most document generators accept the first line of text as the object brief. The Python documentation standard is similar in concept just a slightly different method of documentation. Please read the [PEP8 standards](https://www.python.org/dev/peps/pep-0008/).
 
 Before a riot starts, not all comments need to be moved to the routine's header. Inline comments serve a very valuable purpose. These help to explain what is happening at that location (or moment) in the code's execution. For example:
 

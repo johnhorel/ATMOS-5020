@@ -10,7 +10,7 @@ At the most basic level of any good program is an intuitive layout of the functi
 
 ![Apollo Comments](http://pop.h-cdn.co/assets/16/28/1468253829-screen-shot-2016-07-11-at-121632-pm.png) [Source](https://github.com/chrislgarry/Apollo-11/blob/master/Luminary099/BURN_BABY_BURN--MASTER_IGNITION_ROUTINE.agc#L39-L45)
 
-You might have the most elegant and optimized code ever written on the face of the earth, but without comments, your code is worthless. Good documentation within (and around) your code is how you communicate what the program does and how to use it. At a deeper level it tells you future user (or yourself in the future) how the code is intended to be used. Good code comments are more of a dialog rather than a series of short one liners that explain the obvious.
+**You might have the most elegant and optimized code ever written on the face of the earth, but without comments, your code is worthless.** Good documentation within (and around) your code is how you communicate what the program does and how to use it. At a deeper level it tells you future user (or yourself in the future) how the code is intended to be used. Good code comments are more of a dialog rather than a series of short one liners that explain the obvious.
 
 Take your classic `hello world` example. In the first example We have line by line explanation of the code, where in the second example we have a simple explanation of what the program does.
 

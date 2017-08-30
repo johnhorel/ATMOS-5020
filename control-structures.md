@@ -62,9 +62,6 @@ else:
 
 Derived from the `IF/ELSE IF/ELSE` construct.  Varies in application per language, but evalutes the same value against several statements and 'stops' on the first match.
 
-```python
-
-```
 
 ### Repetition
 

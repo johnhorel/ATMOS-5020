@@ -14,7 +14,9 @@ For much of the late 90's and early 2000's we saw a huge boom in processor techn
 - [Moore's Law, Google](https://research.googleblog.com/2013/11/moores-law-part-1-brief-history-of.html)
 
 ## Overview of programming languages
+
 **Machine**
+
 A set of instructions that are executed at the chipset level. Usually specific to the hardware.  Most often originate as Assembly code and compiled for the desired chipset.  Machine code is encoded in a series of `0` and `1` set representing an explicit instruction or memory register.
 
 **Assembly**

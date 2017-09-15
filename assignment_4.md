@@ -102,9 +102,6 @@ ax2.set_ylabel('Relative Humidity', color='b')
 ax2.tick_params('y', colors='b')
 ax2.grid(True, linestyle='dashed')
 
-# HINT HINT HINT, this code will fit perfectly under the
-# if __name__ == '__main__': statement
-
 # Make a legend, and put it below the figure
 # http://matplotlib.org/users/legend_guide.html#plotting-guide-legend
 # https://stackoverflow.com/a/5487005/4835631
@@ -116,6 +113,9 @@ lgd = ax.legend(lines, labels, loc='upper center', bbox_to_anchor=(0.5, -0.1))
 # https://matplotlib.org/api/figure_api.html#matplotlib.figure.Figure.savefig
 # plt.savefig('metvars-figure.svg', format='svg', bbox_extra_artists=(lgd,), bbox_inches='tight')
 plt.show()
+
+# HINT HINT HINT, this entire code snippet will fit perfectly under the
+# if __name__ == '__main__': statement
 ```
 
 ## Clearly describe the visualization in a caption

@@ -158,7 +158,7 @@ I am available to help up until about 9pm the night before the assignment is due
 
 
 <!-- Refs -->
-[ozone-demo]: demos/ozone_demo.py
-[abw-demo]: demos/abw.py
-[website-template]: https://github.com/adamabernathy/ATMOS-5020/tree/master/demos/ozone-plot.html
+[ozone-demo]: demos/
+[abw-demo]: demos/
+[website-template]: demos/ozone-plot.html
 [expected-result]: supplementary/metvars-figure.svg

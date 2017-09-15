@@ -63,7 +63,7 @@ _Hint_: The "Check Your Understanding" from September 20 has the equation for yo
 
 Using the concepts presented in the [ozone concentrations demo](demos/ozone_plot.py) and [adjusted body weight demo](demos/abw.py), you will need to re-create the following graphic.
 
-![what you should have][supplementary/metvars-figure.png]
+![what you should have](supplementary/metvars-figure.png)
 
 
 The duel axis problem can be explained with the following:

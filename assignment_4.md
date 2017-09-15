@@ -50,7 +50,7 @@ if __name__ == '__main__':
 
 Using the CSV parsing pattern discussed in class, you will be able to parse the downloaded CSV.
 
-Please see [plotting ozone concentrations demo](ozone-demo).
+Please see [plotting ozone concentrations demo](demos/ozone_plot.py).
 
 ## Calculate a derived variable
 
@@ -61,9 +61,9 @@ _Hint_: The "Check Your Understanding" from September 20 has the equation for yo
 
 ## Visualize the data in the form of a 1D plot
 
-Using the concepts presented in the [ozone concentrations demo](ozone-demo) and [adjusted body weight demo](abw-demo), you will need to re-create the following graphic.
+Using the concepts presented in the [ozone concentrations demo](demos/ozone_plot.py) and [adjusted body weight demo](demos/abw.py), you will need to re-create the following graphic.
 
-![what you should have][expected-result]
+![what you should have][supplementary/metvars-figure.svg]
 
 
 The duel axis problem can be explained with the following:
@@ -120,7 +120,7 @@ plt.show()
 
 ## Clearly describe the visualization in a caption
 
-What good is a figure with no caption or explanation?  You'll need to copy [this page](website-template) to your CHPC `public_html` folder.  Then update the text to reflect your work.  Bonus points for those who add additional weather maps from the NWS or of the like and discuss the weather during the time period of your figure.
+What good is a figure with no caption or explanation?  You'll need to copy [this page](demos/ozone-plot.html) to your CHPC `public_html` folder.  Then update the text to reflect your work.  Bonus points for those who add additional weather maps from the NWS or of the like and discuss the weather during the time period of your figure.
 
 ## Display the final product as a webpage via your CHCP public folder
 **Please name the file `weather-report.html`** and be located in your `/5020/` folder.  I will not go looking for files anywhere else.
@@ -153,12 +153,3 @@ Working in a group to solve the problem is fine, but you are expected to write y
 ## Getting help
 
 I am available to help up until about 9pm the night before the assignment is due.  When asking for help, please ask targeted questions, not just saying "it doesn't work".  80% of the battle with writing code is just understanding _where_ the problem is and _what_ might be causing it.
-
-
-
-
-<!-- Refs -->
-[ozone-demo]: demos/
-[abw-demo]: demos/
-[website-template]: demos/ozone-plot.html
-[expected-result]: supplementary/metvars-figure.svg

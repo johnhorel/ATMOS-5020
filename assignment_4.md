@@ -61,7 +61,7 @@ _Hint_: The "Check Your Understanding" from September 20 has the equation for yo
 
 ## Visualize the data in the form of a 1D plot
 
-Using the concepts presented in the [ozone concentrations demo](ozone-demo) and [dew point chart demo](dew-point-demo), you will need to re-create the following graphic.
+Using the concepts presented in the [ozone concentrations demo](ozone-demo) and [adjusted body weight demo](abw-demo), you will need to re-create the following graphic.
 
 ![what you should have][expected-result]
 
@@ -158,7 +158,7 @@ I am available to help up until about 9pm the night before the assignment is due
 
 
 <!-- Refs -->
-[ozone-demo]: //
-[dew-point-demo]: //
-[website-template]: //
+[ozone-demo]: https://github.com/adamabernathy/ATMOS-5020/blob/master/demos/ozone_plot.py
+[abw-demo]: https://github.com/adamabernathy/ATMOS-5020/blob/master/demos/abw.py
+[website-template]: https://github.com/adamabernathy/ATMOS-5020/blob/master/demos/ozone-plot.html
 [expected-result]: supplementary/metvars-figure.svg

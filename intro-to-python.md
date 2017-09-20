@@ -161,7 +161,7 @@ if thing_1 == thing_2:
     print 'Thing 1 is equal to Thing 2'
 elif thing_1:
     print 'Thing 1 is True'
-else ~thing_2:
+else:
     print 'Thing 1 is NOT equal to Thing 2, and Thing 1 is NOT true'
 
 # What should this be?

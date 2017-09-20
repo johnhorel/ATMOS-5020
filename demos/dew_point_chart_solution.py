@@ -55,7 +55,7 @@ if __name__ == '__main__':
     csx = plt.contourf(air_temperature, relative_humidity, z, 32, cmap='jet')
     cs = plt.contour(air_temperature, relative_humidity, z, 20, linewidths=1, colors='k')
 
-    # Explain this sugar!
+    # Use some list comprehension, aka syntax sugar...
     r = range(bounds[0], bounds[1], 11)
     label_loc = list(((i, 50) for i in r))
 
@@ -67,6 +67,7 @@ if __name__ == '__main__':
     # https://stackoverflow.com/a/34353493
     for line in cs.collections:
         line.set_linestyle('-')
+    #     # This is cool if you want to modify the lines based on value
     #     if line.get_linestyle() == [(None, None)]:
     #         pass
     #     else:

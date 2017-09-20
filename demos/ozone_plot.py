@@ -122,7 +122,8 @@ ax.xaxis.set_major_formatter(x_format)
 over_70_idx = np.where((np.isfinite(np_ozone_ave)) & (np_ozone_ave > 70))
 plt.axhline(y=70, color='r', linestyle='--', zorder=3, label='70 ppb Threshold')
 
-# Refactor lesson, now we just want to change the color of the line to red, which makes the plot loot a lot nicer.
+# Refactor lesson, now we just want to change the color of the line to red, 
+# which makes the plot loot a lot nicer.
 # plt.scatter(np_datetime[over_70_idx], np_ozone_ave[over_70_idx], zorder=4, color='r')
 # https://matplotlib.org/examples/pylab_examples/nan_test.html
 _y = np_ozone_ave.copy()

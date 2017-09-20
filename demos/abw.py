@@ -38,6 +38,7 @@ if __name__ == '__main__':
     cs = plt.contour(body_weight, body_height, z, 20, cmap='binary')
     plt.clabel(cs, inline=1, fontsize=10, color='black')
 
+    # Let's just be nice to the user and let them see this
     plt.annotate(
         'Ideal Body Weight',
         xy=(139, 65),

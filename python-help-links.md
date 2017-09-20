@@ -6,7 +6,7 @@ Compiled from homework answers
 
 - https://www.programiz.com/python-programming
 - https://www.stavros.io/tutorials/python/
-- https://www.datacamp.com/courses/?utm_source=thepythonguru&utm_campaign=thepythonguru_tutorials
+- https://www.datacamp.com/courses/
 - https://www.tutorialspoint.com/python/
 - https://pythonprogramming.net/introduction-to-python-programming/
 - https://www.learnpython.org/

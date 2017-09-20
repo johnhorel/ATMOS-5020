@@ -12,11 +12,15 @@ https://utah.instructure.com/courses/460240/
   - [Best Practices](best-practices.md)
   - [Intro to languages](introduction-to-languages.md)
 - September 20, 2017
-  - [Intro to Python]( intro-to-python.md)
+  - [Intro to Python](intro-to-python.md)
   - [demos/fib.py](demos/fib.py)
   - [demos/abw.py](demos/abw.py)
 - September 25, 2017
   - [demos/ozone_plot.py](demos/ozone_plot.py)
+
+## Getting help
+
+You can contact me via email, Canvas or stop by my office.  You can also look at some of the [references here](python-help-links.md) for help too.
 
 ## Assignments
 

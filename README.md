@@ -14,6 +14,7 @@ https://utah.instructure.com/courses/460240/
 - September 20, 2017
   - [Intro to Python](intro-to-python.md)
   - [demos/fib.py](demos/fib.py)
+  - [demos/dew_point_chart_demo.py](demos/dew_point_chart_demo.py)
   - [demos/abw.py](demos/abw.py)
 - September 25, 2017
   - [demos/ozone_plot.py](demos/ozone_plot.py)
